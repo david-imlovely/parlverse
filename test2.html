@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .lato-light {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.5rem;
+      }
+
+      .lato-regular {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .lato-bold {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+      }
+
+      .lato-regular-italic {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .hero {
+        background-color: rgba(231, 1, 1);
+        display: flex;
+        padding: 0 2rem;
+      }
+
+      .intro-image {
+        width: 30%;
+      }
+
+      .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(231, 1, 1);
+    }
+
+    .navbar-logo {
+      flex: 0 0 auto;
+    }
+
+    .logo {
+      max-width: 200px;
+      height: auto;
+    }
+
+    .navbar-links {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-link {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="navbar-logo">
+          <img src="images/logo copy4.png" alt="Logo" class="logo">
+        </div>
+        <div class="navbar-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About</a>
+        </div>
+      </div>
+    <!--Hero Start -->
+    <div class="hero">
+      <div class="intro">
+        <h1 class="lato-bold">...your bridge to exceptional customer care experience.</h1>
+          <p class="lato-light">
+            <form action=""><input type="email"></form>.
+          </p>
+      </div>
+      <div class="intro-image-container">
+        <img class="intro-image" src="images/happy_cus.png" alt="" />
+      </div>
+    </div>
+
+    <!--Hero end -->
+  </body>
+</html>
+
+

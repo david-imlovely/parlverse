@@ -1,0 +1,170 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.logo {
+  height: 7rem;
+}
+
+.light-red-bg {
+  background-color: rgba(231, 200, 200, 0.1);
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.section {
+  padding: 3rem 5rem 3rem 5rem;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* By default, for mobile view */
+  align-items: center;
+  justify-content: center;
+}
+
+.features-image {
+  max-height: 27rem;
+  width: auto;
+}
+.image {
+  flex: 1;
+}
+
+.text {
+  flex: 1;
+  text-align: start;
+  max-width: 70%;
+}
+
+/* For desktop view, reverse the order of flex items */
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+
+  /* Style for odd-numbered sections (1st, 3rd, 5th, etc.) */
+  .section:nth-child(odd) .image {
+    order: 2;
+  }
+
+  /* Style for even-numbered sections (2nd, 4th, 6th, etc.) */
+  .section:nth-child(even) .text {
+    order: 1;
+  }
+}
+
+/* For Mobile view, let the image and text be smaller */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .features-image {
+    max-height: 12rem;
+    width: auto;
+  }
+
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+  }
+
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+
+  .text {
+    padding-top: 2rem;
+    text-align: start;
+    max-width: 60%;
+  }
+}
+
+/* nav */
+.navbar {
+  position: fixed;
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(231, 1, 1);
+  z-index: 3;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+h1 {
+  color: rgba(231, 1, 1);
+}
+h3 {
+  margin: 0;
+}
+
+.about {
+  padding: 3rem;
+  padding-top: 5rem;
+}
+
+.about-text {
+  text-align: start;
+  max-width: 85%;
+  margin: auto;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 85%;
+  margin: auto;
+}
+.team {
+  padding: 1rem;
+  border-left: 2px solid red;
+}
