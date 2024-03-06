@@ -3,109 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <title>How It Works</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      .lato-light {
-        font-family: "Lato", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 1.5rem;
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
       }
 
-      .lato-regular {
-        font-family: "Lato", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+      header {
+        text-align: center;
+        margin-bottom: 40px;
       }
 
-      .lato-bold {
-        font-family: "Lato", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 3rem;
+      h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
       }
 
-      .lato-regular-italic {
-        font-family: "Lato", sans-serif;
-        font-weight: 400;
-        font-style: italic;
+      p {
+        font-size: 18px;
+        color: #555;
       }
 
-      .hero {
-        background-color: rgba(231, 1, 1);
-        display: flex;
-        padding: 0 2rem;
+      .user-process,
+      .org-process {
+        margin-bottom: 40px;
       }
 
-      .intro-image {
-        width: 30%;
+      .step {
+        margin-bottom: 20px;
+        position: relative;
       }
 
-      .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: rgba(231, 1, 1);
-    }
+      .step h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
 
-    .navbar-logo {
-      flex: 0 0 auto;
-    }
+      .step p {
+        font-size: 16px;
+        color: #777;
+      }
 
-    .logo {
-      max-width: 200px;
-      height: auto;
-    }
-
-    .navbar-links {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-    }
-
-    .nav-link {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .nav-link:hover {
-      color: #007bff;
-    }
+      img {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%);
+      }
     </style>
   </head>
   <body>
-    <div class="navbar">
-        <div class="navbar-logo">
-          <img src="images/logo copy4.png" alt="Logo" class="logo">
-        </div>
-        <div class="navbar-links">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">About</a>
-        </div>
-      </div>
-    <!--Hero Start -->
-    <div class="hero">
-      <div class="intro">
-        <h1 class="lato-bold">...your bridge to exceptional customer care experience.</h1>
-          <p class="lato-light">
-            <form action=""><input type="email"></form>.
-          </p>
-      </div>
-      <div class="intro-image-container">
-        <img class="intro-image" src="images/happy_cus.png" alt="" />
-      </div>
-    </div>
+    <header>
+      <h1>How It Works</h1>
+      <p>
+        Discover how easy it is to connect with customer services using our app.
+      </p>
+    </header>
 
-    <!--Hero end -->
+    <section class="user-process">
+      <h2>For Users</h2>
+      <div class="step">
+        <h3>1. Search for the Organization</h3>
+        <p>
+          Simply search for the organization you need to connect with using our
+          app's search feature.
+        </p>
+        <img src="arrow-right.png" alt="Next Step" />
+      </div>
+      <div class="step">
+        <h3>2. Choose Your Communication Method</h3>
+        <p>
+          Select whether you want to send a message or initiate a video call
+          with the customer service representative.
+        </p>
+        <img src="arrow-right.png" alt="Next Step" />
+      </div>
+      <div class="step">
+        <h3>3. Send Your Inquiry</h3>
+        <p>
+          Compose your message or start the video call to communicate directly
+          with the organization's customer service team.
+        </p>
+      </div>
+    </section>
+
+    <section class="org-process">
+      <h2>For Organizations</h2>
+      <div class="step">
+        <h3>1. Receive Customer Inquiries</h3>
+        <p>
+          Organizations will receive messages or video call requests from users
+          seeking assistance or information.
+        </p>
+        <img src="arrow-right.png" alt="Next Step" />
+      </div>
+      <div class="step">
+        <h3>2. Respond Promptly</h3>
+        <p>
+          Customer service representatives can respond promptly to user
+          inquiries, providing assistance and support as needed.
+        </p>
+        <img src="arrow-right.png" alt="Next Step" />
+      </div>
+      <div class="step">
+        <h3>3. Seamless Communication</h3>
+        <p>
+          Enjoy seamless communication with users, ensuring a smooth experience
+          for both parties without the need for external platforms.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
-
-
